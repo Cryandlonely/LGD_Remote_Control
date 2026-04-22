@@ -873,3 +873,9 @@ C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\Sys
 C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\obj\Debug\LGD_Remo.C64CF080.Up2Date
 C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\obj\Debug\LGD_Remote_Control.Form1.resources
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.dll
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.GLControl.dll
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.pdb
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.xml
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\1\Desktop\陆工大\LGD_Remote_Control\LGD_Remote_Control\bin\Debug\OpenTK.GLControl.xml

@@ -42,6 +42,12 @@
             this.btnZoomOut = new System.Windows.Forms.Button();
             this.panelMapBar = new System.Windows.Forms.Panel();
             this.lblMapInfo = new System.Windows.Forms.Label();
+            this.tabControlRight = new System.Windows.Forms.TabControl();
+            this.tabPageMap = new System.Windows.Forms.TabPage();
+            this.tabPagePcd = new System.Windows.Forms.TabPage();
+            this.tabPagePgm = new System.Windows.Forms.TabPage();
+            this.pointCloudControl = new PointCloudControl();
+            this.pgmMapControl = new PgmMapControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
             this.splitContainerMain.Panel1.SuspendLayout();
             this.splitContainerMain.Panel2.SuspendLayout();
@@ -49,6 +55,10 @@
             this.panelVideoTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.videoView)).BeginInit();
             this.panelRtspBar.SuspendLayout();
+            this.tabPagePgm.SuspendLayout();
+            this.tabControlRight.SuspendLayout();
+            this.tabPageMap.SuspendLayout();
+            this.tabPagePcd.SuspendLayout();
             this.panelMapTop.SuspendLayout();
             this.gMapControl.SuspendLayout();
             this.panelMapBar.SuspendLayout();
@@ -66,7 +76,7 @@
             // 
             // splitContainerMain.Panel2
             // 
-            this.splitContainerMain.Panel2.Controls.Add(this.panelMapTop);
+            this.splitContainerMain.Panel2.Controls.Add(this.tabControlRight);
             this.splitContainerMain.Size = new System.Drawing.Size(1200, 700);
             this.splitContainerMain.SplitterDistance = 727;
             this.splitContainerMain.TabIndex = 0;
@@ -140,6 +150,61 @@
             this.lblRtspUrl.Size = new System.Drawing.Size(59, 12);
             this.lblRtspUrl.TabIndex = 3;
             this.lblRtspUrl.Text = "RTSP地址:";
+            // 
+            // tabControlRight
+            // 
+            this.tabControlRight.Controls.Add(this.tabPageMap);
+            this.tabControlRight.Controls.Add(this.tabPagePcd);
+            this.tabControlRight.Controls.Add(this.tabPagePgm);
+            this.tabControlRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlRight.Location = new System.Drawing.Point(0, 0);
+            this.tabControlRight.Name = "tabControlRight";
+            this.tabControlRight.SelectedIndex = 0;
+            this.tabControlRight.TabIndex = 0;
+            // 
+            // tabPageMap
+            // 
+            this.tabPageMap.Controls.Add(this.panelMapTop);
+            this.tabPageMap.Location = new System.Drawing.Point(4, 22);
+            this.tabPageMap.Name = "tabPageMap";
+            this.tabPageMap.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageMap.TabIndex = 0;
+            this.tabPageMap.Text = "地图";
+            this.tabPageMap.UseVisualStyleBackColor = true;
+            // 
+            // tabPagePcd
+            // 
+            this.tabPagePcd.Controls.Add(this.pointCloudControl);
+            this.tabPagePcd.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePcd.Name = "tabPagePcd";
+            this.tabPagePcd.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePcd.TabIndex = 1;
+            this.tabPagePcd.Text = "点云";
+            this.tabPagePcd.UseVisualStyleBackColor = true;
+            // 
+            // tabPagePgm
+            // 
+            this.tabPagePgm.Controls.Add(this.pgmMapControl);
+            this.tabPagePgm.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePgm.Name = "tabPagePgm";
+            this.tabPagePgm.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPagePgm.TabIndex = 2;
+            this.tabPagePgm.Text = "PGM地图";
+            this.tabPagePgm.UseVisualStyleBackColor = true;
+            // 
+            // pgmMapControl
+            // 
+            this.pgmMapControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pgmMapControl.Location = new System.Drawing.Point(3, 3);
+            this.pgmMapControl.Name = "pgmMapControl";
+            this.pgmMapControl.TabIndex = 0;
+            // 
+            // pointCloudControl
+            // 
+            this.pointCloudControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pointCloudControl.Location = new System.Drawing.Point(3, 3);
+            this.pointCloudControl.Name = "pointCloudControl";
+            this.pointCloudControl.TabIndex = 0;
             // 
             // panelMapTop
             // 
@@ -239,6 +304,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.videoView)).EndInit();
             this.panelRtspBar.ResumeLayout(false);
             this.panelRtspBar.PerformLayout();
+            this.tabPagePgm.ResumeLayout(false);
+            this.tabPageMap.ResumeLayout(false);
+            this.tabPagePcd.ResumeLayout(false);
+            this.tabControlRight.ResumeLayout(false);
             this.panelMapTop.ResumeLayout(false);
             this.gMapControl.ResumeLayout(false);
             this.panelMapBar.ResumeLayout(false);
@@ -263,6 +332,12 @@
         private System.Windows.Forms.Button btnZoomIn;
         private System.Windows.Forms.Button btnZoomOut;
         private GMap.NET.WindowsForms.GMapControl gMapControl;
+        private System.Windows.Forms.TabControl tabControlRight;
+        private System.Windows.Forms.TabPage tabPageMap;
+        private System.Windows.Forms.TabPage tabPagePcd;
+        private PointCloudControl pointCloudControl;
+        private System.Windows.Forms.TabPage tabPagePgm;
+        private PgmMapControl pgmMapControl;
     }
 }
 

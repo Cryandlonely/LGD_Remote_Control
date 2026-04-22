@@ -51,6 +51,30 @@ namespace LGD_Remote_Control
             btnZoomOut.Location = new System.Drawing.Point(gMapControl.Width - 46, 50);
             btnZoomIn.BringToFront();
             btnZoomOut.BringToFront();
+
+            // ========== 初始化点云 ==========
+            string pcdPath = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\PCD\scans.pcd"));
+            if (System.IO.File.Exists(pcdPath))
+            {
+                try
+                {
+                    var pts = PcdParser.Load(pcdPath);
+                    pointCloudControl.LoadPoints(pts);
+                }
+                catch (Exception ex)
+                {
+                    pointCloudControl.LoadPoints(null);
+                    System.Diagnostics.Debug.WriteLine("PCD加载失败: " + ex.Message);
+                }
+            }
+
+            // ========== 初始化PGM地图 ==========
+            string pgmPath = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\PGM\map.pgm"));
+            string yamlPath = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\PGM\map.yaml"));
+            pgmMapControl.LoadMap(pgmPath, yamlPath);
         }
 
         /// <summary>
